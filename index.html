@@ -474,9 +474,7 @@ $(document).ready(function (a) {
             type: "POST", url: "contact.php", dataType: "json", cache: !1, data: a(".contact-work-form").serialize(),
             success: function (a) { "error" !== a.info ? (c.parents("form").find("input[type=text],textarea,select").filter(":visible").val(""), d.hide().removeClass("success").removeClass("error").addClass("success").html(a.msg).fadeIn("slow").delay(5E3).fadeOut("slow")) : d.hide().removeClass("success").removeClass("error").addClass("error").html(a.msg).fadeIn("slow").delay(5E3).fadeOut("slow") }
         })
-    }); (function () {
-        var c = document.documentElement, d = !1; document.querySelector("header"); (function () { window.addEventListener("scroll", function () { d || (d = !0, setTimeout(b, 250)) }, !1) })()
-    })()
+    }); 
 });
 
 function revslider_showDoubleJqueryError(d){var e;e="Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.<br> This includes make eliminates the revolution slider libraries, and make it not work.<br><br> To fix it you can:<br>\u00a0\u00a0\u00a0 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";e+="<br>\u00a0\u00a0\u00a0 2. Find the double jquery.js include and remove it.";
