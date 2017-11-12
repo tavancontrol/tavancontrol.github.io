@@ -475,10 +475,7 @@ $(document).ready(function (a) {
             success: function (a) { "error" !== a.info ? (c.parents("form").find("input[type=text],textarea,select").filter(":visible").val(""), d.hide().removeClass("success").removeClass("error").addClass("success").html(a.msg).fadeIn("slow").delay(5E3).fadeOut("slow")) : d.hide().removeClass("success").removeClass("error").addClass("error").html(a.msg).fadeIn("slow").delay(5E3).fadeOut("slow") }
         })
     }); (function () {
-        function b() {
-            200 <= (window.pageYOffset || c.scrollTop) ? a("header").addClass("active") : a("header").removeClass("active");
-            d = !1
-        } var c = document.documentElement, d = !1; document.querySelector("header"); (function () { window.addEventListener("scroll", function () { d || (d = !0, setTimeout(b, 250)) }, !1) })()
+        var c = document.documentElement, d = !1; document.querySelector("header"); (function () { window.addEventListener("scroll", function () { d || (d = !0, setTimeout(b, 250)) }, !1) })()
     })()
 });
 
@@ -1294,7 +1291,7 @@ function Product_Spec_load(){
                 $(".view:eq(0)").html(vSTR.substring(0, n));
                 $(".view:eq(1)").html(vSTR.substring(n + 1, m));
                 $(".view:eq(2)").html(vSTR.substring(m + 1, x));
-                $(".view:eq(3)").html(vSTR.substring(x + 1));
+                $(".view:eq(3)").html(vSTR.substring(x + 1)); 
             }, 100)
 
                 var e = document.createEvent('MouseEvent');
