@@ -958,7 +958,7 @@ var $ = jQuery;
         product_spec_resize();
         
         $(window).scroll(function () {
-//             product_spec_topModel();
+            product_spec_topModel();
             product_spec_topModelxe();
         })
         $(window).resize(function () {
@@ -1680,15 +1680,15 @@ function SenCanNews(){var d=jQuery,e=jQuery(".txt_mail").val();null==/^([a-zA-Z0
 function scrolling(d){d+="_book";setTimeout(function(){jQuery("html, body").scrollTop(jQuery("#"+d).offset().top-100)},600)}function product_resize(){var d=jQuery("#spec_contant").width(),e=2*parseInt(jQuery("#spec_contant").css("padding-left").replace("px","")),f=jQuery("#spec_contant div:eq(0)").width(),d=d-f-e;jQuery("#div_spec").css("width",d)}
 function product_spec_topModelxe() { 430 > jQuery(window).scrollTop() && (jQuery(".owl-item:eq(0)").addClass("xe_item1"), jQuery(".owl-item:eq(1)").addClass("xe_item2"), -1 < location.pathname.toLowerCase().indexOf("product_speccmt.aspx") && jQuery(".xe_item1").addClass("z_1")) };
 
-// function product_spec_topModel() {
-//     var b = jQuery(window).scrollTop(), d = jQuery(window).width(), e = jQuery(".up-footer").offset().top - 300, c = 176, a = 0; 768 > d ? (c = 275, a = 324) : 992 > d ? (c = 264, a = 313) : 1017 > d ? (c = 264, a = 263) : (c = 265, a = 264); 430 < b ? (jQuery(".model_name").css({ top: b - a, "background-color": "white", width: "1000%", height: "37px", "border-bottom": "1px solid" }), jQuery(".model_name8101").css({ top: b - a, "background-color": "white", width: "87%", height: "37px", "border-bottom": "1px solid" }), jQuery(".model_namecmtsvr102").css({
-//         top: b -
-//         a, "background-color": "white", height: "300px", "border-bottom": "1px solid", "margin-left": "-55%"
-//     }), jQuery(".ie_item2").removeClass("ie_item2").addClass("ie_item3"), jQuery(".model_nameiE").css({ width: "100%" }), jQuery(".model_item > div").css({ "margin-left": "0px" }), jQuery(".model_name_T").css({ top: b - c, height: "38px", "border-bottom": "1px solid" }), jQuery(".owl-item:eq(0)").removeClass("xe_item1"), jQuery(".owl-item:eq(1)").removeClass("xe_item2")) : (jQuery(".model_name").css({
-//         top: "0px", "background-color": "transparent",
-//         "border-bottom": "none"
-//     }), jQuery(".model_namecmtsvr102").css({ top: "0px", "background-color": "transparent", "border-bottom": "none", "margin-left": "-55%" }), jQuery(".model_item > div").css({ "margin-left": "15px" }), jQuery(".model_name_T").css({ height: "0px", "border-bottom": "none" }), jQuery(".ie_item3").removeClass("ie_item3").addClass("ie_item2")); b > e && jQuery(".model_name_T").css({ "border-bottom": "none" }); jQuery("#spec").css("height", jQuery("#div_spec").height() + 200)
-// };
+function product_spec_topModel() {
+    var b = jQuery(window).scrollTop(), d = jQuery(window).width(), e = jQuery(".up-footer").offset().top - 300, c = 176, a = 0; 768 > d ? (c = 275, a = 324) : 992 > d ? (c = 264, a = 313) : 1017 > d ? (c = 264, a = 263) : (c = 265, a = 264); 430 < b ? (jQuery(".model_name").css({ top: b - a, "background-color": "white", width: "1000%", height: "37px", "border-bottom": "1px solid" }), jQuery(".model_name8101").css({ top: b - a, "background-color": "white", width: "87%", height: "37px", "border-bottom": "1px solid" }), jQuery(".model_namecmtsvr102").css({
+        top: b -
+        a, "background-color": "white", height: "300px", "border-bottom": "1px solid", "margin-left": "-55%"
+    }), jQuery(".ie_item2").removeClass("ie_item2").addClass("ie_item3"), jQuery(".model_nameiE").css({ width: "100%" }), jQuery(".model_item > div").css({ "margin-left": "0px" }), jQuery(".model_name_T").css({ top: b - c, height: "38px", "border-bottom": "1px solid" }), jQuery(".owl-item:eq(0)").removeClass("xe_item1"), jQuery(".owl-item:eq(1)").removeClass("xe_item2")) : (jQuery(".model_name").css({
+        top: "0px", "background-color": "transparent",
+        "border-bottom": "none"
+    }), jQuery(".model_namecmtsvr102").css({ top: "0px", "background-color": "transparent", "border-bottom": "none", "margin-left": "-55%" }), jQuery(".model_item > div").css({ "margin-left": "15px" }), jQuery(".model_name_T").css({ height: "0px", "border-bottom": "none" }), jQuery(".ie_item3").removeClass("ie_item3").addClass("ie_item2")); b > e && jQuery(".model_name_T").css({ "border-bottom": "none" }); jQuery("#spec").css("height", jQuery("#div_spec").height() + 200)
+};
 
 function product_spec_resize(){var a=jQuery(window).width(),c=parseInt(jQuery("#owl-spec .owl-item").size());if(4<c)if(1270<a){var b=a-(jQuery("#center").width()+262),b=Math.floor(b/2);jQuery("#spec_contant").parent().css("width","1412px")}else b=a-jQuery("#center").width(),b=Math.floor(b/2),jQuery("#div_spec").css("width",""),jQuery("#spec_contant").parent().css("width","");else b=a-jQuery("#center").width(),b=Math.floor(b/2),jQuery("#div_spec").css("width",""),jQuery("#spec_contant").parent().css("width",
 "");0<b?jQuery("#spec_contant").parent().css("left",b+"px"):jQuery("#spec_contant").parent().css("left","0px");1155>a?(jQuery("#spec_H").css("height","318px"),jQuery("#spec_H").css("height","263px")):(jQuery("#spec_H").css("height","262px"),jQuery("#frame_360").prop("width","1170"));jQuery(".owl-cotro_spec").css("visibility","visible");2>c&&jQuery(".owl-cotro_spec").css("visibility","hidden");2==c&&785<a&&jQuery(".owl-cotro_spec").css("visibility","hidden");4==c&&1200<a&&jQuery(".owl-cotro_spec").css("visibility",
