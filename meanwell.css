@@ -1,0 +1,203 @@
+.main-aside {
+  width: 300px;
+  float: left;
+  padding-right: 50px;
+}
+
+.main-aside .ad img {
+  border: 1px solid #dddddd;
+}
+
+.max-xl-size .main-aside {
+  width: 190px;
+  padding-right: 20px;
+}
+
+.max-lg-size .main-aside {
+  display: none;
+}
+
+.main-aside .widget-search {
+  padding: 10px 15px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  position: relative;
+}
+
+.main-aside .widget-search input {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-aside .widget-search input::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+
+.main-aside .widget-search input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+  opacity: 0.5;
+}
+
+.main-aside .widget-search input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+  opacity: 0.5;
+}
+
+.main-aside .widget-search input:-ms-input-placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+
+.main-aside .widget-search .btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  text-align: center;
+  width: 50px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 0 4px 4px 0;
+  font-weight: normal;
+  border: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6c6c6+0,a8a8a8+100 */
+  background: #c6c6c6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c6c6c6 0%, #a8a8a8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c6c6c6 0%, #a8a8a8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c6c6c6 0%, #a8a8a8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.nav-aside {
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav-aside a {
+  text-decoration: none;
+}
+
+.nav-aside > li {
+  background-color: #f0f0f0;
+  border-top: 1px solid #c8c8c8;
+}
+
+.nav-aside > li:hover {
+  background-color: #f5f4f4;
+}
+
+.nav-aside > li:hover a {
+  padding: 10px 15px 10px 25px;
+}
+
+.nav-aside > li > a {
+  padding: 10px 15px;
+  display: block;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+
+.nav-aside > li > a:before {
+  font-family: "style";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e80c';
+}
+
+.nav-aside > li.active {
+  background-color: #e72e25;
+  border-top: 1px solid #e72e25;
+}
+
+.nav-aside > li.active > a {
+  color: #fff;
+}
+
+.nav-aside > li.active > a:before {
+  color: #fff;
+}
+
+.nav-aside > li .sub-nav2 {
+  padding-left: 0;
+  list-style: none;
+  display: none;
+}
+
+.nav-aside > li .sub-nav2 > li {
+  background-color: #fff;
+  border-top: 1px solid #c8c8c8;
+  padding-left: 15px;
+}
+
+.nav-aside > li .sub-nav2 > li:hover {
+  background-color: #f5f4f4;
+}
+
+.nav-aside > li .sub-nav2 > li:hover a {
+  padding: 10px 15px 10px 25px;
+}
+
+.nav-aside > li .sub-nav2 > li > a {
+  padding: 10px 15px;
+  display: block;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+
+.max-lg-size .nav-aside > li .sub-nav2 > li > a {
+	font-size: 0.85rem;
+}
+
+.nav-aside > li .sub-nav2 > li > a:before {
+  font-family: "style";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e80c';
+}
+
+.nav-aside > li .sub-nav2 > li.active a {
+  color: #e72e25;
+  font-weight: bolder;
+}
+
+.nav-aside > li .sub-nav2 > li.active a:before {
+  color: #e72e25;
+}
+
+.nav-aside > li.active .sub-nav2 {
+  display: block;
+}
